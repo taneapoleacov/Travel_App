@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TravelApp</string>
+    <string name="header">Travel the World</string>
+    <string name="caption">This application aims to show you the most beautiful places yet not so popular for tourists but worth visiting!</string>
+    <string name="button">Discover More</string>
+    <string name="second_activity">Welcome to the next page!</string>
+    <string name="country_name">Canada</string>
+    <string name="experience_title">Wine Testing</string>
+</resources>
