@@ -7,6 +7,7 @@
     android:layout_margin="3dp">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/country_card"
         android:layout_width="160dp"
         android:layout_height="160dp"
         app:cardCornerRadius="8dp"

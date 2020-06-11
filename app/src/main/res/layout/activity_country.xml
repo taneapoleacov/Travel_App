@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".CountryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/country_main_image"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/backToMain"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/item_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover Italy"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/backToMain"
+            app:layout_constraintLeft_toRightOf="@id/backToMain"
+            app:layout_constraintTop_toTopOf="@+id/backToMain" />
+
+        <TextView
+            android:id="@+id/country_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Super cool country, easy to navigate and best travaling for the most delicious pizza"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@id/country_main_image"
+            app:layout_constraintLeft_toLeftOf="@+id/country_main_image"
+            app:layout_constraintRight_toRightOf="@+id/country_main_image" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/city_recycler_view"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_description">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

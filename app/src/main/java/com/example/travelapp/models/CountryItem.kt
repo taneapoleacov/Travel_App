@@ -1,6 +1,7 @@
 package com.example.travelapp.models
 
-class CountryItem (
+data class CountryItem (
     val header: String,
-    val image: String
+    val image: String,
+    val description: String
 )

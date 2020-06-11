@@ -16,4 +16,5 @@ class ExperienceItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         titleTextView.text = item.title
         Picasso.get().load(item.image).into(imageView)
     }
+
 }
