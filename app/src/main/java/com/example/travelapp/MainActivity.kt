@@ -190,6 +190,5 @@ class MainActivity : AppCompatActivity(), CountryAdapter.OnItemClickListener{
         intent.putExtra("description",country.description)
         intent.putExtra("image",country.image)
         startActivity(intent)
-        finish()
     }
 }
